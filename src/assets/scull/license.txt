@@ -1,0 +1,11 @@
+Model Information:
+* title:	Forest Skull
+* source:	https://sketchfab.com/3d-models/forest-skull-ce4d33f9b9a3440f97aeec7ed9293b79
+* author:	FletchTech (https://sketchfab.com/FletchTech)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Forest Skull" (https://sketchfab.com/3d-models/forest-skull-ce4d33f9b9a3440f97aeec7ed9293b79) by FletchTech (https://sketchfab.com/FletchTech) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
