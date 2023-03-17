@@ -1,30 +1,35 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLoader, useFrame } from '@react-three/fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import space from "./../texture/space.jpg"
 import { useBox } from '@react-three/cannon';
 let Box = ({ position }) => {
+  let [positionBox, setPosition] = useState(position)
   const [ref] = useBox(() => ({
-    position: position,
+    position: positionBox,
     mass: 1
   }))
   const create = useLoader(TextureLoader, space)
   useFrame(() => {
-    ref.current.rotation.x += 0.01
+    // ref.current.rotation.x += 0.01
   }, {})
-  // useEffect(() => {
   window.addEventListener("keypress", (event) => {
     if (event.code === 'W') {
 
-    } else if (event.code == "D") {
-        // chance position как перемешение объекта
+    } 
+     if (event.code === "KeyD") {
+      console.log('letter', event.code)
+      setPosition([2, 3, 0])
+      // chance position как перемешение объекта
     }
-    console.log('letter', event.code)
+   
   });
-  // }, []);
+  useEffect(() => {
+
+  }, [positionBox]);
 
   return (
-    <mesh position={position} ref={ref}>
+    <mesh position={positionBox} ref={ref}>
       <boxGeometry />
       <meshStandardMaterial map={create} />
     </mesh>
